@@ -1,0 +1,62 @@
+.info-main-container {
+  width: 100%;
+}
+
+input {
+  height: 4rem;
+  padding: 1rem;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+.info-main {
+  margin: 3rem 0;
+  flex-direction: column;
+  width: 96rem;
+  align-items: flex-start;
+}
+
+.info-main > h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.info-main p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #555555;
+}
+
+#useremail,
+#adress,
+#phone {
+  width: 92rem;
+}
+
+.name {
+  gap: 2rem;
+}
+
+.name input {
+  width: 45rem;
+}
+.country-sel {
+  width: 92rem;
+  height: 4rem;
+  outline: none;
+}
+
+.submit-btn {
+  width: 20rem;
+  border: none;
+  border-radius: 4px;
+  background: var(--default-btn-color);
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  height: 4rem;
+}

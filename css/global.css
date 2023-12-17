@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+/* For Global usage of things and writing clean code */
+
+:root {
+  --primary-color: #555555;
+  --secondary-color: #28303f;
+  --default-btn-color: #4172dc;
+  --accent: #262626;
+  --primary-font-size: 1.4rem;
+  --heading-font-size: 3.2rem;
+}
+
+.cur-po {
+  cursor: pointer;
+}
+
+.absolute-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.max-width {
+  max-width: 80%;
+  margin: auto;
+}
+
+.ph-caret-down {
+  font-size: var(--primary-font-size);
+  margin-left: 5px;
+}
+
+.ul {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Till here the classes were globle and applied to many of the HTML elements */
+/* They are used to make the code reusable and keep it clean */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+*::selection {
+  background-color: #ffa500;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+    font-size: 9px;
+  }
+}
+
+/* Navbar is from here ---------------------------------------------------------------------- */
+
+nav {
+  display: flex;
+  height: 8.8rem;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  max-width: 100% !important;
+}
+
+#logo-img {
+  width: 4rem;
+  margin: auto;
+}
+
+#logo > a {
+  font-size: var(--heading-font-size);
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  margin-left: 3rem;
+}
+
+.menu-items {
+  list-style: none;
+}
+
+.menu-items > a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: var(--primary-font-size);
+}
+
+#search-products {
+  opacity: 0.75;
+  outline: none;
+  height: 4rem;
+  width: 20rem;
+  border-radius: 5px;
+  padding-left: 2rem;
+  align-self: center;
+  border: 1px solid gray;
+  transform: translateY(4px);
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icons-item {
+  list-style: none;
+}
+
+.social-icons-item > i {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+#list {
+  display: none;
+}
+
+.logo-search-wrapper,
+.menu-social-wrapper {
+  display: flex;
+  gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-search-wrapper,
+  .menu-social-wrapper {
+    margin-top: 1rem;
+    justify-content: space-between;
+    width: 65rem;
+  }
+
+  #logo {
+    overflow: hidden;
+  }
+
+  .social-icons-item {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 425px) {
+  .menu-items {
+    display: block;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  #logo {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  #search-products {
+    width: 80vw;
+  }
+
+  .logo-search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  #list {
+    display: inline;
+    font-size: 2.6rem;
+    float: left;
+  }
+
+  #listBtn {
+    border: none;
+    background: white;
+    float: left;
+    z-index: 2;
+  }
+
+  .social-icons {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .menu-open {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 12rem;
+    padding-left: 15px;
+    background-color: #fff;
+    visibility: visible;
+    pointer-events: all;
+    opacity: 1;
+    transition: 0.3s;
+  }
+}
+
+/* Options are from here --------------------------------------------------------------------------------------- */
+
+.option {
+  margin-top: 8.8rem;
+  height: 7.2rem;
+  background: var(--accent);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.options {
+  color: white;
+  list-style: none;
+  font-size: var(--primary-font-size);
+  gap: 0.5rem;
+}
+
+#categories {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.first-option {
+  margin-right: 2rem;
+}
+
+.sub-first {
+  margin-right: 2rem;
+  gap: 4rem;
+}
+
+.first-option,
+.second-option {
+  justify-content: space-between;
+  border-right: 1px solid grey;
+  gap: 4rem;
+  color: white;
+  height: 80%;
+}
+
+.description > p {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--primary-font-size);
+}
+
+.description {
+  margin-right: 2rem;
+}
+
+.third-option {
+  gap: 2rem;
+}
+
+.select {
+  background: transparent;
+}
+
+.select {
+  font-size: 1.4rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#currency > option {
+  background: var(--accent);
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.third-option > .options > a {
+  color: white;
+  font-size: var(--primary-font-size);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .second-option {
+    display: none;
+  }
+  .first-option {
+    border: none;
+  }
+  .option {
+    width: 100%;
+    /* margin: 0; */
+    margin-top: 2rem;
+    height: 4rem;
+  }
+}
+
+/* Footer is from here ----------------------------------------------------------------------------------------- */
+
+footer {
+  flex-direction: column;
+  height: 40rem;
+}
+
+.subscription {
+  width: 57.1rem;
+  height: 180.7rem;
+  border-radius: 6px;
+  justify-content: center;
+  text-align: center;
+  background: #7296ab;
+  transform: translateY(10rem);
+  margin-top: 10rem;
+}
+
+.subscription-content {
+  flex-direction: column;
+  height: 100%;
+  padding: 4.5rem;
+  gap: 1rem;
+}
+
+.subscription-content > h1 {
+  font-size: var(--heading-font-size);
+  color: white;
+}
+
+.subscription-content > p {
+  font-size: var(--primary-font-size);
+  color: white;
+}
+
+#user-email {
+  height: 3.6rem;
+  width: 26.8rem;
+  font-size: var(--primary-font-size);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  border: 1px solid #7296ab;
+  outline: none;
+}
+
+#submit-btn {
+  border-radius: 6px;
+  height: 3.6rem;
+  width: 8rem;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  background: white;
+}
+
+.footer {
+  background: #d1e2eb;
+  width: 134.5rem;
+  height: 36.2rem;
+  gap: 14rem;
+  padding-bottom: 10rem;
+  z-index: -1;
+  padding-top: 15rem;
+}
+
+.ul > li {
+  list-style: none;
+  color: #555555;
+  font-size: var(--primary-font-size);
+  font-weight: 500;
+}
+
+.footer > ul {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list-heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.third-list {
+  transform: translateY(2.2rem);
+}

@@ -1,0 +1,238 @@
+/* Know about us is from here -------------------------------------------------------------------------- */
+
+.know-about-us {
+  width: 144rem;
+  height: 46.129rem;
+  gap: 5rem;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+
+.know-about-us-title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.know-about-us-description {
+  font-size: var(--heading-font-size);
+}
+
+.know-about-us-description > span {
+  font-size: var(--heading-font-size);
+}
+
+.know-about-us-description-description {
+  color: gray;
+  font-size: 1.8rem;
+  line-height: 5rem;
+}
+
+.quote {
+  background: #eaf3fb;
+  font-size: 2.4rem;
+  color: gray;
+  text-align: center;
+  width: 28.198rem;
+  height: 16.665rem;
+  padding-top: 3rem;
+}
+
+#on-the-top {
+  transform: translateX(10rem) translateY(3rem);
+}
+
+.know-about-us-left {
+  flex-direction: column;
+}
+
+.numbers {
+  display: flex;
+  margin: 2rem;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.numbers > .first > p,
+.numbers > .second > p,
+.numbers > .third > p {
+  font-size: 1.862rem;
+  color: gray;
+}
+
+span {
+  font-size: var(--heading-font-size);
+  color: #3e60c9;
+}
+
+/* Services is from here ------------------------------------------------------------------------------------------- */
+.services-team {
+  width: 144rem;
+  height: 110.8rem;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+
+.services-team-left {
+  width: 50%;
+  height: 100%;
+  padding: 5rem;
+  flex-direction: column;
+  text-align: left;
+  transform: translateY(3rem);
+}
+
+.services-team-right {
+  width: 50%;
+  height: 100%;
+  padding: 5rem;
+}
+
+.services-team-left-heading {
+  font-size: 2.4rem;
+  transform: translateX(-11rem);
+}
+
+.heading-description {
+  display: flex;
+}
+
+.services-team-left-heading-description {
+  font-size: var(--heading-font-size);
+}
+
+span {
+  font-size: var(--heading-font-size);
+  color: #3e60c9;
+}
+
+.praises {
+  font-size: 1.8rem;
+  color: gray;
+  line-height: 4rem;
+}
+
+.offers {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 282px);
+  grid-template-rows: repeat(2, 282px);
+  row-gap: 2rem;
+  column-gap: 2rem;
+  padding-bottom: 6rem;
+}
+
+.offer-1,
+.offer-2,
+.offer-3,
+.offer-4 {
+  height: 27.58rem;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.offer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.offer-description {
+  color: gray;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  padding: 0 3px;
+}
+
+.read-more {
+  background: var(--default-btn-color);
+  font-size: 1.2rem;
+  width: 24.2rem;
+  height: 4.4rem;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  margin-top: 2rem;
+}
+
+/* Contact is from here -------------------------------------------------------------------------------------- */
+
+.contact {
+  height: 76.4rem;
+  width: 126rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.contact-left {
+  width: 63rem;
+  height: 100%;
+  background: var(--accent);
+  padding: 5rem 5rem;
+}
+
+.contact-right {
+  width: 63rem;
+  height: 100%;
+}
+
+.contact-right > img {
+  /* width: 100%; */
+  transform: translateY(0.5px);
+}
+
+.left-heading {
+  font-size: 4.8rem;
+  color: white;
+}
+
+.inside-heading {
+  color: #ffc94b;
+  font-size: 4.8rem;
+}
+
+form {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+form > label {
+  font-size: var(--primary-font-size);
+  color: white;
+}
+
+label > i {
+  font-size: var(--primary-font-size);
+  padding-right: 5px;
+}
+
+form > .contact-inputs {
+  height: 5.6rem;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+#description {
+  height: 15.3rem;
+  padding-bottom: 10rem;
+}
+
+#formBtn {
+  background: var(--default-btn-color);
+  color: white;
+  border: none;
+  font-size: var(--primary-font-size);
+}
+
+.contact-right-img {
+  margin-top: -1px;
+}
