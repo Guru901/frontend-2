@@ -16,6 +16,11 @@
   width: 100%;
   height: 2.5rem;
   padding: 2rem 5rem;
+  justify-content: space-between !important;
+}
+
+.ftop > select {
+  height: 2.5rem;
 }
 
 .ftop > h1 {
