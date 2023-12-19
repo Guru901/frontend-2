@@ -2,11 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=`, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/cart.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
     <title>Document</title>
   </head>
   <body>
@@ -128,100 +126,46 @@
           </div>
         </ul>
       </div>
-      <div class="cart-coupon absolute-center">
-        <div class="cart-main absolute-center">
-          <div class="cart-items absolute-center">
-            <h1>Cart <span>3</span></h1>
-            <div class="items absolute-center">
-              <div class="cart-item absolute-center">
-                <div class="name-img absolute-center">
-                  <img src="/imgs/cart imgs/photo.png" alt="" />
-                  <h1>RTX 3060 16GB Ram</h1>
-                </div>
-                <div class="item-description absolute-center">
-                  <div class="price absolute-center">
-                    <p>$435</p>
-                  </div>
-                  <div class="quantity absolute-center">
-                    <span>+</span>
-                    <span>2</span>
-                    <span>-</span>
-                  </div>
-                  <div class="price">
-                    <p>$870</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cart-item absolute-center">
-                <div class="name-img absolute-center">
-                  <img src="/imgs/cart imgs/photo-1.png" alt="" />
-                  <h1>NebulaFlex Sneakers</h1>
-                </div>
-                <div class="item-description absolute-center">
-                  <div class="price absolute-center">
-                    <p>$120</p>
-                  </div>
-                  <div class="quantity absolute-center">
-                    <span>+</span>
-                    <span>1</span>
-                    <span>-</span>
-                  </div>
-                  <div class="price">
-                    <p>$120</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cart-item absolute-center">
-                <div class="name-img absolute-center">
-                  <img src="/imgs/cart imgs/photo-2.png" alt="" />
-                  <h1>BreezeBlend Coats</h1>
-                </div>
-                <div class="item-description absolute-center">
-                  <div class="price absolute-center">
-                    <p>$89.99</p>
-                  </div>
-                  <div class="quantity absolute-center">
-                    <span>+</span>
-                    <span>1</span>
-                    <span>-</span>
-                  </div>
-                  <div class="price">
-                    <p>$89.99</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="summary">
-            <h1>Order Summary</h1>
-            <div class="dets absolute-center">
-              <div class="det absolute-center">
-                <div class="dleft absolute-center">
-                  <p>Price</p>
-                  <p>Shipping</p>
-                  <p>Tax</p>
-                  <p>Discount price</p>
-                </div>
-                <div class="dright absolute-center">
-                  <p>$1080</p>
-                  <p>$0</p>
-                  <p>$0</p>
-                  <p>$47.10</p>
-                </div>
-              </div>
-              <div class="final-price absolute-center">
-                <h1>Total Price</h1>
-                <h1>$1,032.8</h1>
-              </div>
-              <a href="/pages/checkout/info.html">
-                <button class="sum-btn cur-po">Shop now</button>
-              </a>
-            </div>
-          </div>
+      <div class="contact absolute-center">
+        <div class="contact-left">
+          <p class="left-heading">
+            Tell Us About Your
+            <span class="inside-heading">Concerns</span>
+          </p>
+          <form>
+            <label>Your Name</label>
+            <input
+              class="contact-inputs"
+              type="text"
+              placeholder="Enter Your Name here"
+            />
+            <label>Your Email</label>
+            <input
+              class="contact-inputs"
+              type="email"
+              placeholder="Enter Your Email here"
+            />
+            <label>Description</label>
+            <input
+              type="text"
+              id="description"
+              placeholder="Tell us about your concern"
+              class="contact-inputs"
+            />
+            <input
+              id="formBtn"
+              class="cur-po contact-inputs"
+              type="button"
+              value="SEND"
+            />
+          </form>
         </div>
-        <div class="coupon absolute-center">
-          <input type="text" id="code" placeholder="210548" />
-          <button class="cur-po">Apply code</button>
+        <div class="contact-right">
+          <img
+            src="/imgs/About Page imgs/right.png"
+            class="contact-right-img"
+            alt=""
+          />
         </div>
       </div>
       <footer class="absolute-center max-width">
@@ -270,6 +214,5 @@
         </div>
       </footer>
     </div>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </body>
 </html>
