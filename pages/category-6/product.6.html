@@ -185,7 +185,7 @@
               </p>
             </div>
             <div class="btns">
-              <button class="shop-now cur-po">Shop now</button>
+              <button class="shop-now cur-po" id="clickable">Shop now</button>
               <button class="cart cur-po">Add to basket</button>
             </div>
           </div>
@@ -276,6 +276,35 @@
         </div>
       </footer>
     </div>
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+      let i = 18;
+      document.querySelector("#clickable").addEventListener("click", () => {
+        i--;
+        if (i == 12) {
+          alert("Check the Console for a GIFT");
+          console.log("Here's your gift");
+          console.log(
+            "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion"
+          );
+        }
+        if (i == 6) {
+          alert("Check the Console for another GIFT");
+          console.log("Here's your last gift");
+          console.log(
+            "http://2fd6cemt4gmccflhm6imvdfvli3nf7zn6rfrwpsy7uhxrgbypvwf5fad.onion"
+          );
+        }
+        if (i == 0) {
+          alert("Check the Console for another final GIFT");
+          console.log("Here's your beggary");
+          console.log(
+            "http://64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.dog"
+          );
+        }
+      });
+    </script>
   </body>
 </html>
